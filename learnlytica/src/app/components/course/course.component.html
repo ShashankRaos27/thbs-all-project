@@ -1,0 +1,21 @@
+<p>course works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let myelem of card1" class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top"
+                    src="https://dz8fbjd9gwp2s.cloudfront.net/courses/61aa18860cf26833c8eca46c/61aa18860cf26833c8eca46c_scaled_cover.jpg?v=1"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{myelem.title | uppercase}}</h5>
+                    <span>{{myelem.currentdt| date:'m/dd/yy' }}</span>
+                    
+                    price:{{myelem.price }}
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
