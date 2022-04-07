@@ -32,6 +32,13 @@ card=[{
   name:'nandan',
   currentdt:new Date(),
   imagelink:'https://dz8fbjd9gwp2s.cloudfront.net/courses/61ae538d0cf272041d79ddd9/61ae538d0cf272041d79ddd9_scaled_cover.jpg?v=1'
+},
+{
+  title:'java For Beginners',
+  price:'5000',
+  name:'suraj',
+  currentdt:new Date(),
+  imagelink:'https://dz8fbjd9gwp2s.cloudfront.net/courses/61a70fae0cf28f8b4fca1aca/61a70fae0cf28f8b4fca1aca_scaled_cover.jpg?v=1'
 }
 ];
   constructor() { }

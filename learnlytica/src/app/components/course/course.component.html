@@ -1,14 +1,14 @@
 <p>course works!</p>
 <div class="container">
     <div class="row">
-        <div *ngFor="let myelem of card" class="col-4">
+        <div *ngFor="let myelem of card" class="col-3">
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top"
                     src="{{myelem.imagelink}}"
                     alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">{{myelem.title | uppercase}}</h5>
-                    <span>{{myelem.currentdt| date:'m/dd/yy' }}</span>
+                    <span>{{myelem.currentdt| date:'long' }}</span>
                     
                     price:{{myelem.price }}
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -18,4 +18,5 @@
             </div>
         </div>
     </div>
+    <div>
 </div>
