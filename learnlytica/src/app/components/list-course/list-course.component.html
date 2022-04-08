@@ -1,2 +1,13 @@
+<div class="row">
 
-<!-- <app-course> -->
+    <div class="col" *ngFor="let course of  cList?.['sub-home'].data">
+
+        <!-- {{course.cList | json}} -->
+
+        <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+
+        </app-course>
+
+    </div>
+
+</div>  
