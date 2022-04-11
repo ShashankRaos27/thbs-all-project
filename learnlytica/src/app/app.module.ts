@@ -15,10 +15,12 @@ import { HomeComponent } from './components/home/home.component';
 import { AddressComponent } from './components/address/address.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule} from '@angular/material/slider';
+import { LoginComponent } from './components/login/login.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import {MatSliderModule} from '@angular/material/slider';
     AddressComponent,
     ContactFormComponent,
     LoginComponent,
+    SignUpComponent
    
    
   ],
@@ -44,7 +47,8 @@ import {MatSliderModule} from '@angular/material/slider';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDialogModule
     
     
   ],

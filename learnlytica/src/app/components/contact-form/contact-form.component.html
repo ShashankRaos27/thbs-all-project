@@ -1,6 +1,6 @@
 <div class="border border-success  m-2 p-1">
   {{myform.value | json}}
-  
+
   <form class="row g-3" novalidate [formGroup]="myform">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email</label>
@@ -10,7 +10,7 @@
         <p *ngIf="myform.controls['email'].errors?.['required']">Email is required</p>
         <p *ngIf="myform.controls['email'].errors?.['email']">please enter valid Email </p>
         <p *ngIf="myform.controls['email'].errors?.['minlength']">Email min length 4 character is required</p>
-    </div>
+      </div>
     </div>
     <div class="col-md-6">
       <label for="inputPassword4" class="form-label">Password</label>
@@ -56,6 +56,7 @@
     </div>
     <div class="col-12">
       <button (click)="getValues()" type="submit" class="btn btn-primary">Sign in</button>
+      <button mat-button mat-dialog-close>Cancel</button>
     </div>
   </form>
 </div>
