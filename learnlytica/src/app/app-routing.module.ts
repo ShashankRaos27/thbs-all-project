@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CourseComponent } from './components/course/course.component';
+import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListContactComponent } from './components/list-contact/list-contact.component';
 import { ListCourseComponent } from './components/list-course/list-course.component';
@@ -13,9 +14,11 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   { path: 'course', component:ListCourseComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'services/:pid', component: DetailProfileComponent },
   { path: 'list-contact', component: ListContactComponent},
   {path:'login',component:LoginComponent},
   {path:'sign-up',component:SignUpComponent},
+
   {path:'**', component:NotFoundComponent}
  
 

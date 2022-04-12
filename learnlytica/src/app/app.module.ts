@@ -21,6 +21,8 @@ import {MatSliderModule} from '@angular/material/slider';
 import { LoginComponent } from './components/login/login.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { MaterialModule } from './material/material.module';
+import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     AddressComponent,
     ContactFormComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    DetailProfileComponent
    
    
   ],
@@ -48,7 +51,9 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatDialogModule
+    MatDialogModule,
+    MaterialModule
+    
     
     
   ],
