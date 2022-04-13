@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { tap } from 'rxjs';
 import { ConfigService } from 'src/app/services/config.service';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { LoginComponent } from '../login/login.component';
@@ -16,7 +17,17 @@ export class HomeComponent implements OnInit {
   constructor(private serv: ConfigService) { }
   ngOnInit(): void {
     this.data = this.serv.getUserList();
-    this.data.subscribe((data: any) => {this.data= data});
+    this.serv.getUserList()
+      .pipe(
+        tap((userList: any) => { //array of object
+          return userList.map(
+            (element: any, index: Number, arr: any) => {//loop over array
+              element['title'] = 'thbs ' + index;
+              element['name'] = "Mr. " + element['name'];
+              return element; //return object
+            })
+        })
+      ).subscribe((data: any) => { this.data = data });
 
   }
 
