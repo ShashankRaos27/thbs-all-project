@@ -7,6 +7,7 @@ import { ListContactComponent } from './components/list-contact/list-contact.com
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 import { ServicesComponent } from './components/services/services.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
@@ -18,7 +19,7 @@ const routes: Routes = [
   { path: 'list-contact', component: ListContactComponent},
   {path:'login',component:LoginComponent},
   {path:'sign-up',component:SignUpComponent},
-
+  {path:'reactive',component:ReactiveComponent},
   {path:'**', component:NotFoundComponent}
  
 

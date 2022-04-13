@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { MaterialModule } from './material/material.module';
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { DetailProfileComponent } from './components/detail-profile/detail-profi
     ContactFormComponent,
     LoginComponent,
     SignUpComponent,
-    DetailProfileComponent
+    DetailProfileComponent,
+    ReactiveComponent
    
    
   ],
