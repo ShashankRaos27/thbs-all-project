@@ -10,6 +10,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { ServicesComponent } from './components/services/services.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'sign-up',component:SignUpComponent},
   {path:'reactive',component:ReactiveComponent},
+  {path:'template-form',component:TemplateFormComponent},
   {path:'**', component:NotFoundComponent}
  
 

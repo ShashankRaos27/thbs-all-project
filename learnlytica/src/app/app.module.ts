@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { AddressComponent } from './components/address/address.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +23,10 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { MaterialModule } from './material/material.module';
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TitlePipe } from './pipes/title.pipe';
+import { BracketPipe } from './pipes/bracket.pipe';
+import { ThbsBackgroundDirective } from './directives/thbs-background.directive';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
     LoginComponent,
     SignUpComponent,
     DetailProfileComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    TitlePipe,
+    BracketPipe,
+    ThbsBackgroundDirective,
+    TemplateFormComponent
    
    
   ],
@@ -53,7 +61,8 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatDialogModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
     
     
     

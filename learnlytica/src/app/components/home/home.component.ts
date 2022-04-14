@@ -11,7 +11,9 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+myTitle:string='torry harris';
+// value:string='100';
+// value1:string='400'
   data: any
   //constructor(private myDialog: MatDialog) { }
   constructor(private serv: ConfigService) { }
