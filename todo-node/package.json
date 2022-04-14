@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "this learning project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shashank",
+  "license": "ISC"
+}
