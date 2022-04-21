@@ -1,3 +1,5 @@
+
+
 <div class="row">
 
     <div class="col" *ngFor="let course of  cList?.['sub-home'].data">
@@ -9,5 +11,10 @@
         </app-course>
 
     </div>
-
-</div>  
+   
+</div>
+<div class="row">
+    <div class="col" *ngFor="let user of myUserlist">
+        {{user | json}}
+    </div>
+</div>

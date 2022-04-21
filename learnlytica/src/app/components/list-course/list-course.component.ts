@@ -8,13 +8,19 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class ListCourseComponent implements OnInit {
   cList:any;
-  constructor(private mConfig: ConfigService) { }
+  myUserlist:any;
+  constructor(private mConfig: ConfigService, private myUser:ConfigService) { }
   ngOnInit(): void {
+
     this.mConfig.getCourseList().subscribe((data)=>{
       // console.log(data)
       this.cList=data;
     });
 
+    this.myUser.getProfiles().subscribe((results:any)=>
+    {
+      this.myUserlist=results;
+    });
   }
 
 }

@@ -14,6 +14,7 @@ import { TemplateFormComponent } from './components/template-form/template-form.
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
+  {path:'',component:HomeComponent},
   { path: 'course', component:ListCourseComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'services/:pid', component: DetailProfileComponent },
