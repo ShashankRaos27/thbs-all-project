@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -25,11 +26,14 @@ export class ContactFormComponent implements OnInit {
     state: new FormControl(),
     zip: new FormControl(),
   });
-  constructor() { }
+  constructor(private service:ConfigService) { }
 
   ngOnInit(): void {
   }
   getValues() {
     alert("success fully sign in");
+    this.service.submitContactDetails(this.myform.value).subscribe((data)=>{
+      console.log(data)
+    })
   }
 }

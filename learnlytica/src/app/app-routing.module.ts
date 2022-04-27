@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { CourseComponent } from './components/course/course.component';
 import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 import { HomeComponent } from './components/home/home.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'sign-up',component:SignUpComponent},
   {path:'reactive',component:ReactiveComponent},
   {path:'template-form',component:TemplateFormComponent},
+  {path:'contact-form',component:ContactFormComponent},
   {path:'**', component:NotFoundComponent}
  
 
